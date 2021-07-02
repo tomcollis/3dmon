@@ -9,7 +9,7 @@ then
 fi
 
 # If there is no internet connection, stop and wait for next minute!
-if ping -q -c 1 -W 1 google.com >/dev/null; then
+if ping -q -c 1 -W 1 8.8.8.8 >/dev/null; then
   echo "The network is up"
 else
   echo "The network is down. Trying to reconnect..."
