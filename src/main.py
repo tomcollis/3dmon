@@ -35,7 +35,15 @@ def sendToHA(percent, timeLeft):
             print(r.text)
         except:
             print("Error posting to HA. Down?")
+###
+# FUTURE MQTT
+###
 
+# import paho.mqtt.publish as publish
+# EXAMPLE publish.single("paho/test/single", "payload", hostname="mqtt.eclipse.org")
+# ALL single(topic, payload=None, qos=0, retain=False, hostname="localhost", port=1883, client_id="", keepalive=60, will=None, auth=None, tls=None, protocol=mqtt.MQTTv311, transport="tcp")	
+	
+	
 ###
 # Start listening to the serial interface and read lines!
 ###
