@@ -6,7 +6,6 @@ PING_HOST=8.8.8.8
 WIFI_FILE=wifi.sh
 
 # Quit if the process is still running, no need to do anything!
-# if ps ax | grep -v grep | grep "main.py" > /dev/null:
 if pgrep -f "python main.py" &>/dev/null;
 then
         echo "Still running...";
