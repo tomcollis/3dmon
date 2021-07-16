@@ -37,4 +37,4 @@ else
         exit 1
 fi
 
-nohup /home/tc/main.py 2>&1 > /tmp/3dmon.log
+nohup $WORK_PATH/main.py 2>&1 > $WORK_PATH/3dmon.log
